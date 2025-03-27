@@ -1,5 +1,5 @@
 import {makeAutoObservable, observable} from 'mobx';
-import {OrderOption, Product} from './types';
+import {OrderOption, Product} from './screens/list-card/types';
 import {Alert} from 'react-native';
 
 class Store {
@@ -78,6 +78,10 @@ class Store {
 
   async mockApiCall() {
     return new Promise((resolve, reject) => {
+      console.log('Данные для аналитики', {
+        cart: this.cart,
+        options: this.options,
+      });
       setTimeout(() => {
         Math.random() > 0.8
           ? reject(new Error('Сервис недоступен'))

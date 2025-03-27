@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react-lite';
 import {FlatList, StyleSheet, Text, View, Pressable} from 'react-native';
-import {store} from '../list-card/store';
+import {store} from '../../store';
 import ProductCard from '../list-card/components/product-card';
 import {OrderOptions} from './components/order-options';
 

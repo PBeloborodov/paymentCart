@@ -1,5 +1,5 @@
 import {StyleSheet, Switch, Text, View} from 'react-native';
-import {store} from '../../list-card/store';
+import {store} from '../../../store';
 import {observer} from 'mobx-react-lite';
 
 export const OrderOptions = observer(() => (

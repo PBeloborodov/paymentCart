@@ -1,7 +1,7 @@
 import {observer} from 'mobx-react-lite';
 import {useCallback, useState} from 'react';
 import {FlatList, ListRenderItem} from 'react-native';
-import {store} from '../store';
+import {store} from '../../../store';
 import {Product} from '../types';
 import ProductCard from './product-card';
 

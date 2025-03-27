@@ -1,6 +1,6 @@
 import {View, Text, Button, StyleSheet, ImageBackground} from 'react-native';
 import React, {FC} from 'react';
-import {store} from '../store';
+import {store} from '../../../store';
 import {Product} from '../types';
 import {observer} from 'mobx-react-lite';
 
